@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -15,18 +16,25 @@ public enum EnemyState
     Attack
 };
 
+public enum EnemyType
+{
+    Mellee,
+    Ranged,
+};
+
 public class EnemyController : MonoBehaviour
 {
     GameObject player;
     public EnemyState currentState = EnemyState.Wander;
 
+    public EnemyType enemyType;
     public float range;
     public float speed;
     public float attackRange;
     public float coolDown;
+    public GameObject bulletPrefab;
 
-    //
-    public int hitsCount = 0;
+
 
     private bool chooseDirection = false;
     //private bool dead = false;
@@ -113,10 +121,21 @@ public class EnemyController : MonoBehaviour
     {
         if (!coolDownAttack)
         {
-            hitsCount++;
-            Debug.Log(hitsCount);
-            GameController.DamagePlayer(1);
-            StartCoroutine(CoolDown());
+            switch (enemyType) 
+            {
+                case EnemyType.Mellee:
+                    GameController.DamagePlayer(1);
+                    StartCoroutine(CoolDown());
+                break;
+
+                case EnemyType.Ranged: 
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
+                    bullet.GetComponent<BulletController>().GetPlayer(player.transform);
+                    bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
+                    bullet.GetComponent<BulletController>().isEnemyBullet = true;
+                    StartCoroutine(CoolDown());
+                    break;
+            }
         }
     }
 
