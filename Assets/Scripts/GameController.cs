@@ -8,8 +8,8 @@ public class GameController : MonoBehaviour
 {
     public static GameController instanse;
 
-    private static int health = 10;
-    private static int maxHealth = 10;
+    private static int health = 6;
+    private static int maxHealth = 6;
     private static float moveSpeed = 5;
     private static float fireRate = 0.5f;
     [SerializeField] 

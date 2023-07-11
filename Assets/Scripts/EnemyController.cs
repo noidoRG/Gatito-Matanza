@@ -84,8 +84,8 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1f,4f));
          randomDirection = new Vector3(0,0,Random.Range(0,360));
         // Нужно для поворачивания врага, не знаю нужно ли сейчас
-        //Quaternion nextRotation = Quaternion.Euler(randomDirection);
-        //transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f,2f));
+        Quaternion nextRotation = Quaternion.Euler(randomDirection);
+        transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f, 2f));
         chooseDirection = false;
     }
 
