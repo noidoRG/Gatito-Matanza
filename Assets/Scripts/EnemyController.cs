@@ -1,14 +1,18 @@
 using NUnit.Framework.Constraints;
+using System;
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public enum EnemyState
 {
     Wander,
     Follow,
-    Die
+    Die,
+    Attack
 };
 
 public class EnemyController : MonoBehaviour
@@ -18,9 +22,15 @@ public class EnemyController : MonoBehaviour
 
     public float range;
     public float speed;
+    public float attackRange;
+    public float coolDown;
+
+    //
+    public int hitsCount = 0;
 
     private bool chooseDirection = false;
-    private bool dead = false;
+    //private bool dead = false;
+    private bool coolDownAttack = false;
     private Vector3 randomDirection; // = Vector3.zero;
 
     // Start is called before the first frame update
@@ -36,13 +46,19 @@ public class EnemyController : MonoBehaviour
         {
             case EnemyState.Wander:
                 Wander();
-                break;
+            break;
+            
             case EnemyState.Follow:
                 Follow();
-                break;
+            break;
+            
             case EnemyState.Die:
                 Death();
-                break;
+            break;
+            
+            case EnemyState.Attack:
+                Attack();
+            break;
         }
 
         if (IsPlayerInRange(range) && currentState != EnemyState.Die)
@@ -51,6 +67,10 @@ public class EnemyController : MonoBehaviour
         }
         else if (!IsPlayerInRange(range) && currentState != EnemyState.Die)
             currentState = EnemyState.Wander;
+        if (Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+        {
+            currentState = EnemyState.Attack;
+        }
     }
 
     private bool IsPlayerInRange(float range)
@@ -64,8 +84,8 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1f,4f));
          randomDirection = new Vector3(0,0,Random.Range(0,360));
         // Нужно для поворачивания врага, не знаю нужно ли сейчас
-        Quaternion nextRotation = Quaternion.Euler(randomDirection);
-        transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f,2f));
+        //Quaternion nextRotation = Quaternion.Euler(randomDirection);
+        //transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f,2f));
         chooseDirection = false;
     }
 
@@ -87,6 +107,26 @@ public class EnemyController : MonoBehaviour
     void Follow()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+    }
+
+    void Attack()
+    {
+        if (!coolDownAttack)
+        {
+            hitsCount++;
+            Debug.Log(hitsCount);
+            GameController.DamagePlayer(1);
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    private IEnumerator CoolDown()
+    {
+        Debug.Log("cooldown init!!!");
+        coolDownAttack = true;
+        yield return new WaitForSeconds(coolDown);
+        Debug.Log("cooldown fin!!!");
+        coolDownAttack = false;
     }
 
     public void Death()
