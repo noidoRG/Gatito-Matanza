@@ -8,17 +8,20 @@ public class GameController : MonoBehaviour
 {
     public static GameController instanse;
 
-    private static int health = 6;
+    private static float health = 6;
     private static int maxHealth = 6;
     private static float moveSpeed = 5;
     private static float fireRate = 0.5f;
-    [SerializeField] 
+    private static float bulletSize = 0.29f;
+
+
     public TextMeshProUGUI healthText;
 
-    public static int Health { get => health; set => health = value; }
+    public static float Health { get => health; set => health = value; }
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public static float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
     public static float FireRate { get => fireRate; set => fireRate = value; }
+    public static float BulletSize { get => bulletSize; set => bulletSize = value; }
 
     // Start is called before the first frame update
     private void Awake()
@@ -42,7 +45,6 @@ public class GameController : MonoBehaviour
 
     public static void DamagePlayer(int damage)
     {
-        //Debug.Log("Before hit: " +  health);
         health -= damage;
         if (health <= 0)
         {
@@ -51,11 +53,29 @@ public class GameController : MonoBehaviour
 
     }
 
-    public static void HealPlayer(int healAmount) 
+    public static void HealPlayer(float healAmount) 
     {
         health = Mathf.Min(maxHealth, health + healAmount);
-
     }
+
+    
+    public static void FireRateChange(float rate) 
+    {
+        fireRate -= rate;
+    }
+
+    public static void MoveSpeedChange(float speed) 
+    {
+        moveSpeed += speed;
+    }
+    
+    public static void BulletSizeChange(float size) 
+    {
+        bulletSize += size;
+    }
+
+
+
     public static void KillPlayer()
     {
         //Destroy(GameObject.FindGameObjectWithTag("Player"));
