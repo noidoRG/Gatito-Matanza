@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 1.25
+  isEnemyBullet: 0
 --- !u!61 &-2760675193654479272
 BoxCollider2D:
   m_ObjectHideFlags: 0
