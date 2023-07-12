@@ -1,0 +1,1256 @@
+fileFormatVersion: 2
+guid: 2a6c8d6ecbd92a34297161262f5c70b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4123759109944209897
+    second: Cat Sangre Gatito Matanza run-Sheet_0
+  - first:
+      213: 1337681771260247219
+    second: Cat Sangre Gatito Matanza run-Sheet_1
+  - first:
+      213: 3664879080481830833
+    second: Cat Sangre Gatito Matanza run-Sheet_2
+  - first:
+      213: 4224065712530740583
+    second: Cat Sangre Gatito Matanza run-Sheet_3
+  - first:
+      213: -6003281805325836693
+    second: Cat Sangre Gatito Matanza run-Sheet_4
+  - first:
+      213: -8227776764014449755
+    second: Cat Sangre Gatito Matanza run-Sheet_5
+  - first:
+      213: 4363950193196416837
+    second: Cat Sangre Gatito Matanza run-Sheet_6
+  - first:
+      213: -9217699345637496282
+    second: Cat Sangre Gatito Matanza run-Sheet_7
+  - first:
+      213: 509807352741001318
+    second: Cat Sangre Gatito Matanza run-Sheet_8
+  - first:
+      213: -4156892719237896236
+    second: Cat Sangre Gatito Matanza run-Sheet_9
+  - first:
+      213: -1603218904047253552
+    second: Cat Sangre Gatito Matanza run-Sheet_10
+  - first:
+      213: -2420280966909789745
+    second: Cat Sangre Gatito Matanza run-Sheet_11
+  - first:
+      213: -6916592962742947667
+    second: Cat Sangre Gatito Matanza run-Sheet_12
+  - first:
+      213: -6088959555493045232
+    second: Cat Sangre Gatito Matanza run-Sheet_13
+  - first:
+      213: -3342889083850127787
+    second: Cat Sangre Gatito Matanza run-Sheet_14
+  - first:
+      213: -6587229075227260010
+    second: Cat Sangre Gatito Matanza run-Sheet_15
+  - first:
+      213: -671189437328243423
+    second: Cat Sangre Gatito Matanza run-Sheet_16
+  - first:
+      213: -5118537151454145601
+    second: Cat Sangre Gatito Matanza run-Sheet_17
+  - first:
+      213: -5281810554302649936
+    second: Cat Sangre Gatito Matanza run-Sheet_18
+  - first:
+      213: -8641479645567654128
+    second: Cat Sangre Gatito Matanza run-Sheet_19
+  - first:
+      213: 4572447617825177652
+    second: Cat Sangre Gatito Matanza run-Sheet_20
+  - first:
+      213: -3354510032540194221
+    second: Cat Sangre Gatito Matanza run-Sheet_21
+  - first:
+      213: -7443971834260425570
+    second: Cat Sangre Gatito Matanza run-Sheet_22
+  - first:
+      213: -985466675828891126
+    second: Cat Sangre Gatito Matanza run-Sheet_23
+  - first:
+      213: 1539823229654041810
+    second: Cat Sangre Gatito Matanza run-Sheet_24
+  - first:
+      213: -4414215726839985872
+    second: Cat Sangre Gatito Matanza run-Sheet_25
+  - first:
+      213: -2241065392079305821
+    second: Cat Sangre Gatito Matanza run-Sheet_26
+  - first:
+      213: 8733014158689828501
+    second: Cat Sangre Gatito Matanza run-Sheet_27
+  - first:
+      213: 4265538851896779983
+    second: Cat Sangre Gatito Matanza run-Sheet_28
+  - first:
+      213: -753897085822324463
+    second: Cat Sangre Gatito Matanza run-Sheet_29
+  - first:
+      213: 1089871591503778016
+    second: Cat Sangre Gatito Matanza run-Sheet_30
+  - first:
+      213: 5929405860805501168
+    second: Cat Sangre Gatito Matanza run-Sheet_31
+  - first:
+      213: 6685058541239920298
+    second: Cat Sangre Gatito Matanza run-Sheet_32
+  - first:
+      213: -1186776179669950073
+    second: Cat Sangre Gatito Matanza run-Sheet_33
+  - first:
+      213: 1929230219677938010
+    second: Cat Sangre Gatito Matanza run-Sheet_34
+  - first:
+      213: -9048665843381714995
+    second: Cat Sangre Gatito Matanza run-Sheet_35
+  - first:
+      213: -4976927012020654008
+    second: Cat Sangre Gatito Matanza run-Sheet_36
+  - first:
+      213: -2381958758082386470
+    second: Cat Sangre Gatito Matanza run-Sheet_37
+  - first:
+      213: 9151735641458591131
+    second: Cat Sangre Gatito Matanza run-Sheet_38
+  - first:
+      213: 6061604009795938550
+    second: Cat Sangre Gatito Matanza run-Sheet_39
+  - first:
+      213: -3398260685083858315
+    second: Cat Sangre Gatito Matanza run-Sheet_40
+  - first:
+      213: 1760500105355154329
+    second: Cat Sangre Gatito Matanza run-Sheet_41
+  - first:
+      213: 5867357399493738957
+    second: Cat Sangre Gatito Matanza run-Sheet_42
+  - first:
+      213: -3387857014985649918
+    second: Cat Sangre Gatito Matanza run-Sheet_43
+  - first:
+      213: 7151116745702862284
+    second: Cat Sangre Gatito Matanza run-Sheet_44
+  - first:
+      213: 4484095432088102442
+    second: Cat Sangre Gatito Matanza run-Sheet_45
+  - first:
+      213: 1085548280779095471
+    second: Cat Sangre Gatito Matanza run-Sheet_46
+  - first:
+      213: -8924436517914676769
+    second: Cat Sangre Gatito Matanza run-Sheet_47
+  - first:
+      213: -5503010977337445649
+    second: Cat Sangre Gatito Matanza run-Sheet_48
+  - first:
+      213: -6958643651362615463
+    second: Cat Sangre Gatito Matanza run-Sheet_49
+  - first:
+      213: -1670213015846734177
+    second: Cat Sangre Gatito Matanza run-Sheet_50
+  - first:
+      213: 2530327066929153771
+    second: Cat Sangre Gatito Matanza run-Sheet_51
+  - first:
+      213: -5665008590958332393
+    second: Cat Sangre Gatito Matanza run-Sheet_52
+  - first:
+      213: 456477753283576202
+    second: Cat Sangre Gatito Matanza run-Sheet_53
+  - first:
+      213: -9065094002462337443
+    second: Cat Sangre Gatito Matanza run-Sheet_54
+  - first:
+      213: 6540863069627972134
+    second: Cat Sangre Gatito Matanza run-Sheet_55
+  - first:
+      213: 4862313793347345673
+    second: Cat Sangre Gatito Matanza run-Sheet_56
+  - first:
+      213: -7873437014409949219
+    second: Cat Sangre Gatito Matanza run-Sheet_57
+  - first:
+      213: -1619489235263500503
+    second: Cat Sangre Gatito Matanza run-Sheet_58
+  - first:
+      213: 2651775073443865198
+    second: Cat Sangre Gatito Matanza run-Sheet_59
+  - first:
+      213: -2709972076301838222
+    second: Cat Sangre Gatito Matanza run-Sheet_60
+  - first:
+      213: -7370348718497276446
+    second: Cat Sangre Gatito Matanza run-Sheet_61
+  - first:
+      213: -2466463559428143882
+    second: Cat Sangre Gatito Matanza run-Sheet_62
+  - first:
+      213: 1285840541850627444
+    second: Cat Sangre Gatito Matanza run-Sheet_63
+  - first:
+      213: -8482804153663827751
+    second: Cat Sangre Gatito Matanza run-Sheet_64
+  - first:
+      213: -3886404404196452482
+    second: Cat Sangre Gatito Matanza run-Sheet_65
+  - first:
+      213: 6723775722244167583
+    second: Cat Sangre Gatito Matanza run-Sheet_66
+  - first:
+      213: 2796600211190054477
+    second: Cat Sangre Gatito Matanza run-Sheet_67
+  - first:
+      213: -7451345487803540452
+    second: Cat Sangre Gatito Matanza run-Sheet_68
+  - first:
+      213: -7544436366007044836
+    second: Cat Sangre Gatito Matanza run-Sheet_69
+  - first:
+      213: -7796699569155862645
+    second: Cat Sangre Gatito Matanza run-Sheet_70
+  - first:
+      213: 5302427493654722356
+    second: Cat Sangre Gatito Matanza run-Sheet_71
+  - first:
+      213: -8387231457691351689
+    second: Cat Sangre Gatito Matanza run-Sheet_72
+  - first:
+      213: -504673336984517768
+    second: Cat Sangre Gatito Matanza run-Sheet_73
+  - first:
+      213: -2575160035916622606
+    second: Cat Sangre Gatito Matanza run-Sheet_74
+  - first:
+      213: 1045322154801230001
+    second: Cat Sangre Gatito Matanza run-Sheet_75
+  - first:
+      213: -2296488578543320025
+    second: Cat Sangre Gatito Matanza run-Sheet_76
+  - first:
+      213: -1348390611452287136
+    second: Cat Sangre Gatito Matanza run-Sheet_77
+  - first:
+      213: -6950516574855820224
+    second: Cat Sangre Gatito Matanza run-Sheet_78
+  - first:
+      213: 8045392578070592034
+    second: Cat Sangre Gatito Matanza run-Sheet_79
+  - first:
+      213: 1660042374058429404
+    second: Cat Sangre Gatito Matanza run-Sheet_80
+  - first:
+      213: -2132746373455307462
+    second: Cat Sangre Gatito Matanza run-Sheet_81
+  - first:
+      213: -3073871738486884294
+    second: Cat Sangre Gatito Matanza run-Sheet_82
+  - first:
+      213: -2558400726920928727
+    second: Cat Sangre Gatito Matanza run-Sheet_83
+  - first:
+      213: -2766066510515164243
+    second: Cat Sangre Gatito Matanza run-Sheet_84
+  - first:
+      213: 1761148766878776832
+    second: Cat Sangre Gatito Matanza run-Sheet_85
+  - first:
+      213: -3560304711016376109
+    second: Cat Sangre Gatito Matanza run-Sheet_86
+  - first:
+      213: 8903572257030100638
+    second: Cat Sangre Gatito Matanza run-Sheet_87
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e8e7820f675c6c0800000000000000
+      internalID: -4123759109944209897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc7b7ecb76609210800000000000000
+      internalID: 1337681771260247219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b731e83b144cd230800000000000000
+      internalID: 3664879080481830833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7655d4fa265ee9a30800000000000000
+      internalID: 4224065712530740583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6edcfa310f00bca0800000000000000
+      internalID: -6003281805325836693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aba4b130a011dd80800000000000000
+      internalID: -8227776764014449755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f38fa549ddf8c30800000000000000
+      internalID: 4363950193196416837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a2de85847241080800000000000000
+      internalID: -9217699345637496282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66872041613331700800000000000000
+      internalID: 509807352741001318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7ea649810cf46c0800000000000000
+      internalID: -4156892719237896236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d78217a6e830c9e0800000000000000
+      internalID: -1603218904047253552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9f3b6a84f696ed0800000000000000
+      internalID: -2420280966909789745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da07db798535300a0800000000000000
+      internalID: -6916592962742947667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cdd138b8baf7ba0800000000000000
+      internalID: -6088959555493045232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5560591f61cab91d0800000000000000
+      internalID: -3342889083850127787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b44f48e067594a0800000000000000
+      internalID: -6587229075227260010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1254e0b43c47fa6f0800000000000000
+      internalID: -671189437328243423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb39fe5749d47f8b0800000000000000
+      internalID: -5118537151454145601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9a1ebf84d33b6b0800000000000000
+      internalID: -5281810554302649936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017eb200c0c431880800000000000000
+      internalID: -8641479645567654128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4300d8ee1e8947f30800000000000000
+      internalID: 4572447617825177652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a25faf5e26271d0800000000000000
+      internalID: -3354510032540194221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94f4ec7e03b1b890800000000000000
+      internalID: -7443971834260425570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02eb31974be252f0800000000000000
+      internalID: -985466675828891126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d48c6ca11d8e5510800000000000000
+      internalID: 1539823229654041810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03982c71f2e8db2c0800000000000000
+      internalID: -4414215726839985872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a301ba46e226e0e0800000000000000
+      internalID: -2241065392079305821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ef92b9b16e13970800000000000000
+      internalID: 8733014158689828501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc46fea6cfc323b30800000000000000
+      internalID: 4265538851896779983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111bb52489e9985f0800000000000000
+      internalID: -753897085822324463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e05f562070002f00800000000000000
+      internalID: 1089871591503778016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f06e6e073b794250800000000000000
+      internalID: 5929405860805501168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6eb45035916cc50800000000000000
+      internalID: 6685058541239920298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781a0e63a59b78fe0800000000000000
+      internalID: -1186776179669950073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a513addc9a006ca10800000000000000
+      internalID: 1929230219677938010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfb50a7b5eac6280800000000000000
+      internalID: -9048665843381714995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840767f50476eeab0800000000000000
+      internalID: -4976927012020654008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad56ed2312591fed0800000000000000
+      internalID: -2381958758082386470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95cb63f31f710f70800000000000000
+      internalID: 9151735641458591131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat Sangre Gatito Matanza run-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f868fc2bb42f1450800000000000000
+      internalID: 6061604009795938550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 45645c0022a04aa49ae125be8bf6a294
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cat Sangre Gatito Matanza run-Sheet_0: -4123759109944209897
+      Cat Sangre Gatito Matanza run-Sheet_1: 1337681771260247219
+      Cat Sangre Gatito Matanza run-Sheet_10: -1603218904047253552
+      Cat Sangre Gatito Matanza run-Sheet_11: -2420280966909789745
+      Cat Sangre Gatito Matanza run-Sheet_12: -6916592962742947667
+      Cat Sangre Gatito Matanza run-Sheet_13: -6088959555493045232
+      Cat Sangre Gatito Matanza run-Sheet_14: -3342889083850127787
+      Cat Sangre Gatito Matanza run-Sheet_15: -6587229075227260010
+      Cat Sangre Gatito Matanza run-Sheet_16: -671189437328243423
+      Cat Sangre Gatito Matanza run-Sheet_17: -5118537151454145601
+      Cat Sangre Gatito Matanza run-Sheet_18: -5281810554302649936
+      Cat Sangre Gatito Matanza run-Sheet_19: -8641479645567654128
+      Cat Sangre Gatito Matanza run-Sheet_2: 3664879080481830833
+      Cat Sangre Gatito Matanza run-Sheet_20: 4572447617825177652
+      Cat Sangre Gatito Matanza run-Sheet_21: -3354510032540194221
+      Cat Sangre Gatito Matanza run-Sheet_22: -7443971834260425570
+      Cat Sangre Gatito Matanza run-Sheet_23: -985466675828891126
+      Cat Sangre Gatito Matanza run-Sheet_24: 1539823229654041810
+      Cat Sangre Gatito Matanza run-Sheet_25: -4414215726839985872
+      Cat Sangre Gatito Matanza run-Sheet_26: -2241065392079305821
+      Cat Sangre Gatito Matanza run-Sheet_27: 8733014158689828501
+      Cat Sangre Gatito Matanza run-Sheet_28: 4265538851896779983
+      Cat Sangre Gatito Matanza run-Sheet_29: -753897085822324463
+      Cat Sangre Gatito Matanza run-Sheet_3: 4224065712530740583
+      Cat Sangre Gatito Matanza run-Sheet_30: 1089871591503778016
+      Cat Sangre Gatito Matanza run-Sheet_31: 5929405860805501168
+      Cat Sangre Gatito Matanza run-Sheet_32: 6685058541239920298
+      Cat Sangre Gatito Matanza run-Sheet_33: -1186776179669950073
+      Cat Sangre Gatito Matanza run-Sheet_34: 1929230219677938010
+      Cat Sangre Gatito Matanza run-Sheet_35: -9048665843381714995
+      Cat Sangre Gatito Matanza run-Sheet_36: -4976927012020654008
+      Cat Sangre Gatito Matanza run-Sheet_37: -2381958758082386470
+      Cat Sangre Gatito Matanza run-Sheet_38: 9151735641458591131
+      Cat Sangre Gatito Matanza run-Sheet_39: 6061604009795938550
+      Cat Sangre Gatito Matanza run-Sheet_4: -6003281805325836693
+      Cat Sangre Gatito Matanza run-Sheet_5: -8227776764014449755
+      Cat Sangre Gatito Matanza run-Sheet_6: 4363950193196416837
+      Cat Sangre Gatito Matanza run-Sheet_7: -9217699345637496282
+      Cat Sangre Gatito Matanza run-Sheet_8: 509807352741001318
+      Cat Sangre Gatito Matanza run-Sheet_9: -4156892719237896236
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
