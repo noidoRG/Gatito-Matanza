@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1810621907982676417, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
       propertyPath: m_Name
-      value: Bullet
+      value: PlayerBullet
       objectReference: {fileID: 0}
     - target: {fileID: 1869935231991018012, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
       propertyPath: m_RootOrder
@@ -55,6 +55,18 @@ PrefabInstance:
     - target: {fileID: 1869935231991018012, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863932384408707218, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
+      propertyPath: m_Color.b
+      value: 0.23529413
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863932384408707218, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
+      propertyPath: m_Color.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863932384408707218, guid: 92f81ec85dec43043aff617b61af1d70, type: 3}
+      propertyPath: m_Color.r
+      value: 0.27058825
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
