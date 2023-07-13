@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     private static int maxHealth = 6;
     private static float moveSpeed = 5;
     private static float fireRate = 0.5f;
-    private static float bulletSize = 0.29f;
+    private static float bulletSize = 0.29f ;
 
 
     public TextMeshProUGUI healthText;

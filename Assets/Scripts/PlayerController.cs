@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using Unity.VisualScripting;
+
 public class PlayerController : MonoBehaviour
 {
 
     public float speed;
-    Rigidbody2D rigidBody2D;
     public TextMeshProUGUI collectedText;
     public static int collectedAmount = 0;
     public GameObject bulletPrefab;
@@ -13,10 +15,29 @@ public class PlayerController : MonoBehaviour
     private float lastFire;
     public float fireDelay;
 
+    Rigidbody2D rigidBody2D;
+    Vector2 movementInput;
+    Vector2 smoothedMovementInput;
+    Vector2 movementInputSmoothedVelocity;
+
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
+
+    }
+
+
+    private void FixedUpdate()
+    {
+        smoothedMovementInput = Vector2.SmoothDamp(smoothedMovementInput, movementInput, ref movementInputSmoothedVelocity, 0.1f);
+        rigidBody2D.velocity = smoothedMovementInput * speed;
+    }
+
+    void OnMove(InputValue inputValue)
+    {
+        movementInput = inputValue.Get<Vector2>();
 
     }
 
@@ -26,8 +47,8 @@ public class PlayerController : MonoBehaviour
         fireDelay = GameController.FireRate;
         speed = GameController.MoveSpeed;
 
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        //float horizontal = Input.GetAxis("Horizontal");
+        //float vertical = Input.GetAxis("Vertical");
 
         float shootHorizontal = Input.GetAxis("ShootHorizontal");
         float shootVertical = Input.GetAxis("ShootVertical");
@@ -38,7 +59,7 @@ public class PlayerController : MonoBehaviour
             lastFire = Time.time;
         }
 
-        rigidBody2D.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
+        //rigidBody2D.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
         collectedText.text = "Items Collected: " + collectedAmount;
     }
 
