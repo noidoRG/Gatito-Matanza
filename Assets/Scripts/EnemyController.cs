@@ -1,15 +1,10 @@
-using NUnit.Framework.Constraints;
-using System;
 using System.Collections;
-using System.Security.Cryptography.X509Certificates;
-using TMPro;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 public enum EnemyState
 {
+    Idle,
     Wander,
     Follow,
     Die,
@@ -18,66 +13,73 @@ public enum EnemyState
 
 public enum EnemyType
 {
-    Mellee,
-    Ranged,
+    Melee,
+    Ranged
 };
 
 public class EnemyController : MonoBehaviour
 {
-    GameObject player;
-    public EnemyState currentState = EnemyState.Wander;
 
+    GameObject player;
+    public EnemyState currState = EnemyState.Idle;
     public EnemyType enemyType;
     public float range;
     public float speed;
     public float attackRange;
+    public float bulletSpeed;
     public float coolDown;
-    public GameObject bulletPrefab;
-
-
-
-    private bool chooseDirection = false;
-    //private bool dead = false;
+    private bool chooseDir = false;
+    private bool dead = false;
     private bool coolDownAttack = false;
-    private Vector3 randomDirection; // = Vector3.zero;
+    public bool notInRoom = false;
+    private Vector3 randomDir;
+    public GameObject bulletPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");    
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch(currentState)
+        switch (currState)
         {
-            case EnemyState.Wander:
+            //case(EnemyState.Idle):
+            //    Idle();
+            //break;
+            case (EnemyState.Wander):
                 Wander();
-            break;
-            
-            case EnemyState.Follow:
+                break;
+            case (EnemyState.Follow):
                 Follow();
-            break;
-            
-            case EnemyState.Die:
-                Death();
-            break;
-            
-            case EnemyState.Attack:
+                break;
+            case (EnemyState.Die):
+                break;
+            case (EnemyState.Attack):
                 Attack();
-            break;
+                break;
         }
 
-        if (IsPlayerInRange(range) && currentState != EnemyState.Die)
+        if (!notInRoom)
         {
-            currentState = EnemyState.Follow;
+            if (IsPlayerInRange(range) && currState != EnemyState.Die)
+            {
+                currState = EnemyState.Follow;
+            }
+            else if (!IsPlayerInRange(range) && currState != EnemyState.Die)
+            {
+                currState = EnemyState.Wander;
+            }
+            if (Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+            {
+                currState = EnemyState.Attack;
+            }
         }
-        else if (!IsPlayerInRange(range) && currentState != EnemyState.Die)
-            currentState = EnemyState.Wander;
-        if (Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+        else
         {
-            currentState = EnemyState.Attack;
+            currState = EnemyState.Idle;
         }
     }
 
@@ -88,27 +90,25 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator ChooseDirection()
     {
-        chooseDirection = true;
-        yield return new WaitForSeconds(Random.Range(1f,4f));
-         randomDirection = new Vector3(0,0,Random.Range(0,360));
-        // Нужно для поворачивания врага, не знаю нужно ли сейчас
-        Quaternion nextRotation = Quaternion.Euler(randomDirection);
-        transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f, 2f));
-        chooseDirection = false;
+        chooseDir = true;
+        yield return new WaitForSeconds(Random.Range(2f, 8f));
+        randomDir = new Vector3(0, 0, Random.Range(0, 360));
+        Quaternion nextRotation = Quaternion.Euler(randomDir);
+        transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f, 2.5f));
+        chooseDir = false;
     }
 
     void Wander()
     {
-        if (!chooseDirection)
+        if (!chooseDir)
         {
             StartCoroutine(ChooseDirection());
         }
 
-        transform.position += speed * Time.deltaTime * -transform.right;
-        
+        transform.position += -transform.right * speed * Time.deltaTime;
         if (IsPlayerInRange(range))
         {
-            currentState = EnemyState.Follow;
+            currState = EnemyState.Follow;
         }
     }
 
@@ -121,14 +121,13 @@ public class EnemyController : MonoBehaviour
     {
         if (!coolDownAttack)
         {
-            switch (enemyType) 
+            switch (enemyType)
             {
-                case EnemyType.Mellee:
+                case (EnemyType.Melee):
                     GameController.DamagePlayer(1);
                     StartCoroutine(CoolDown());
-                break;
-
-                case EnemyType.Ranged: 
+                    break;
+                case (EnemyType.Ranged):
                     GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
                     bullet.GetComponent<BulletController>().GetPlayer(player.transform);
                     bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
@@ -141,16 +140,14 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator CoolDown()
     {
-        Debug.Log("cooldown init!!!");
         coolDownAttack = true;
         yield return new WaitForSeconds(coolDown);
-        Debug.Log("cooldown fin!!!");
         coolDownAttack = false;
     }
 
     public void Death()
     {
-        Destroy(gameObject); 
+        RoomController.instance.StartCoroutine(RoomController.instance.RoomCoroutine());
+        Destroy(gameObject);
     }
-
 }
