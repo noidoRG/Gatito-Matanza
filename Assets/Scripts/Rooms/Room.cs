@@ -66,7 +66,6 @@ public class Room : MonoBehaviour
             updatedDoors = true;
         }
     }
-
     public void RemoveUnconnectedDoors()
     {
         Debug.Log("removing doors");
@@ -76,23 +75,46 @@ public class Room : MonoBehaviour
             {
                 case Door.DoorType.right:
                     if (GetRight() == null)
+                    {
                         door.gameObject.SetActive(false);
+                        CreateBoxCollider2D(door.transform.position, new Vector2(0.74f, 2), new Vector2(0.13f, 0));
+                    }
                     break;
                 case Door.DoorType.left:
                     if (GetLeft() == null)
+                    {
                         door.gameObject.SetActive(false);
+                        CreateBoxCollider2D(door.transform.position, new Vector2(0.74f, 2), new Vector2(-0.13f, 0));
+                    }
                     break;
                 case Door.DoorType.top:
                     if (GetTop() == null)
+                    {
                         door.gameObject.SetActive(false);
+                        CreateBoxCollider2D(door.transform.position, new Vector2(2, 0.18f), new Vector2(0, 0.41f));
+                    }
                     break;
                 case Door.DoorType.bottom:
                     if (GetBottom() == null)
+                    {
                         door.gameObject.SetActive(false);
+                        CreateBoxCollider2D(door.transform.position, new Vector2(2, 1), new Vector2(0, 0.1f));
+                    }
                     break;
             }
         }
     }
+
+    private void CreateBoxCollider2D(Vector3 position, Vector2 size, Vector2 offset)
+    {
+        GameObject boxColliderObject = new GameObject("BoxCollider2D");
+        boxColliderObject.transform.position = position;
+        BoxCollider2D boxCollider = boxColliderObject.AddComponent<BoxCollider2D>();
+        boxCollider.size = size;
+        boxCollider.offset = offset;
+    }
+
+
 
     public Room GetRight()
     {
