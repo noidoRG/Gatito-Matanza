@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   collectedText: {fileID: 0}
-  bulletPrefab: {fileID: 5743446864351730902, guid: 3fb208d40bbca1f448e78da912033196, type: 3}
+  bulletPrefab: {fileID: 4490657837497357744, guid: 3fb208d40bbca1f448e78da912033196, type: 3}
   bulletSpeed: 7.5
   fireDelay: 0.5
 --- !u!95 &3609503140902872362

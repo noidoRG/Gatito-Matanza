@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-
     public int Width;
     public int Height;
     public int X;
@@ -66,6 +65,7 @@ public class Room : MonoBehaviour
             updatedDoors = true;
         }
     }
+
     public void RemoveUnconnectedDoors()
     {
         Debug.Log("removing doors");
@@ -112,9 +112,8 @@ public class Room : MonoBehaviour
         BoxCollider2D boxCollider = boxColliderObject.AddComponent<BoxCollider2D>();
         boxCollider.size = size;
         boxCollider.offset = offset;
+        boxCollider.tag = "Wall";
     }
-
-
 
     public Room GetRight()
     {
@@ -124,6 +123,7 @@ public class Room : MonoBehaviour
         }
         return null;
     }
+
     public Room GetLeft()
     {
         if (RoomController.instance.DoesRoomExist(X - 1, Y))
@@ -132,6 +132,7 @@ public class Room : MonoBehaviour
         }
         return null;
     }
+
     public Room GetTop()
     {
         if (RoomController.instance.DoesRoomExist(X, Y + 1))
@@ -140,6 +141,7 @@ public class Room : MonoBehaviour
         }
         return null;
     }
+
     public Room GetBottom()
     {
         if (RoomController.instance.DoesRoomExist(X, Y - 1))
@@ -148,7 +150,6 @@ public class Room : MonoBehaviour
         }
         return null;
     }
-
 
     void OnDrawGizmos()
     {

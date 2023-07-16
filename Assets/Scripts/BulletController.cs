@@ -28,7 +28,7 @@ public class BulletController : MonoBehaviour
         {
             currentPosition = transform.position;
             transform.position = Vector2.MoveTowards(transform.position, playerPosition, 5f * Time.deltaTime);
-            if (currentPosition == lastPosition )
+            if (currentPosition == lastPosition)
             {
                 Destroy(gameObject);
             }
@@ -38,7 +38,7 @@ public class BulletController : MonoBehaviour
 
     public void GetPlayer(Transform player)
     {
-         playerPosition = player.position;
+        playerPosition = player.position;
     }
 
     IEnumerator DeathDelay()
@@ -54,11 +54,14 @@ public class BulletController : MonoBehaviour
             collision.gameObject.GetComponent<EnemyController>().Death();
             Destroy(gameObject);
         }
-        if (collision.tag == "Player" && isEnemyBullet)
+        else if (collision.tag == "Player" && isEnemyBullet)
         {
             GameController.DamagePlayer(1);
             Destroy(gameObject);
         }
-
+        else if (collision.tag == "Wall" || collision.tag == "Door")
+        {
+            Destroy(gameObject);
+        }
     }
 }
