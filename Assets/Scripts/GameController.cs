@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController instanse;
+    public static GameController instance;
 
     private static float health = 6;
     private static int maxHealth = 6;
@@ -14,6 +14,11 @@ public class GameController : MonoBehaviour
     private static float fireRate = 0.5f;
     private static float bulletSize = 0.2f;
 
+    public float invulnerabilityDuration = 2f; // ƒлительность неу€звимости в секундах
+    public float blinkInterval = 0.2f; // »нтервал между мигани€ми
+
+    private bool isInvulnerable = false;
+    private SpriteRenderer playerSprite;
 
     public TextMeshProUGUI healthText;
 
@@ -26,15 +31,15 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        if (instanse == null)
+        if (instance == null)
         {
-            instanse = this;
+            instance = this;
         }
     }
 
     void Start()
     {
-        
+        playerSprite = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -45,39 +50,55 @@ public class GameController : MonoBehaviour
 
     public static void DamagePlayer(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if (!instance.isInvulnerable)
         {
-            KillPlayer(); 
-        }
+            health -= damage;
+            if (health <= 0)
+            {
+                KillPlayer();
+            }
 
+            instance.StartCoroutine(instance.MakePlayerInvulnerable());
+        }
     }
 
-    public static void HealPlayer(float healAmount) 
+    public static void HealPlayer(float healAmount)
     {
         health = Mathf.Min(maxHealth, health + healAmount);
     }
 
-    
-    public static void FireRateChange(float rate) 
+    public static void FireRateChange(float rate)
     {
         fireRate -= rate;
     }
 
-    public static void MoveSpeedChange(float speed) 
+    public static void MoveSpeedChange(float speed)
     {
         moveSpeed += speed;
     }
-    
-    public static void BulletSizeChange(float size) 
+
+    public static void BulletSizeChange(float size)
     {
         bulletSize += size;
     }
 
-
-
     public static void KillPlayer()
     {
         //Destroy(GameObject.FindGameObjectWithTag("Player"));
+    }
+
+    private IEnumerator MakePlayerInvulnerable()
+    {
+        isInvulnerable = true;
+
+        float endTime = Time.time + invulnerabilityDuration;
+        while (Time.time < endTime)
+        {
+            playerSprite.enabled = !playerSprite.enabled;
+            yield return new WaitForSeconds(blinkInterval);
+        }
+
+        playerSprite.enabled = true;
+        isInvulnerable = false;
     }
 }

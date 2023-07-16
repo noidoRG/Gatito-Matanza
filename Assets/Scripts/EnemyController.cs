@@ -19,8 +19,8 @@ public enum EnemyType
 
 public class EnemyController : MonoBehaviour
 {
-
-    GameObject player;
+    private Animator animator;
+    private GameObject player;
     public EnemyState currState = EnemyState.Idle;
     public EnemyType enemyType;
     public float range;
@@ -34,16 +34,22 @@ public class EnemyController : MonoBehaviour
     public bool notInRoom = false;
     private Vector3 randomDir;
     public GameObject bulletPrefab;
+    private float horizontal;
+    private float vertical;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        horizontal = 0f;
+        vertical = 0f;
+
         switch (currState)
         {
             //case(EnemyState.Idle):
@@ -105,7 +111,12 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(ChooseDirection());
         }
 
-        transform.position += -transform.right * speed * Time.deltaTime;
+        horizontal = -1f;
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+        animator.SetBool("Walking", true); // Enable walking animation
+
+        transform.position += new Vector3(horizontal, vertical, 0) * speed * Time.deltaTime;
         if (IsPlayerInRange(range))
         {
             currState = EnemyState.Follow;
@@ -114,7 +125,14 @@ public class EnemyController : MonoBehaviour
 
     void Follow()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Vector3 direction = player.transform.position - transform.position;
+        horizontal = Mathf.Clamp(direction.x, -1f, 1f);
+        vertical = Mathf.Clamp(direction.y, -1f, 1f);
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+        animator.SetBool("Walking", true); // Enable walking animation
+
+        transform.position += new Vector3(horizontal, vertical, 0) * speed * Time.deltaTime;
     }
 
     void Attack()
